@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    header, footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    main {
+        margin: 20px;
+    }
+    
+    form {
+        margin-bottom: 20px;
+    }
+    
+    fieldset {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    
+    input,
+    select,
+    button {
+        margin-bottom: 10px;
+    }
+    
+
+    
+   
+    
+    /* Style the exercise info */
+    .exercise-info {
+        font-size: 14px;
+        color: #777;
+        margin-top: 5px;
+    }
+    
+    /* Style the checkbox and label */
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    /* Reset some default styles for consistency */
+body, h1, p, form, fieldset, label, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0000;
+}
+
+form {
+    margin: 20px auto;
+    width: 80%;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color:#f9ac54;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Add some spacing for better readability */
+br {
+    margin-bottom: 10px;
+}
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #f9ac54;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d79447;
+}
+        nav {
+           max-width: 1200px;
+           margin: auto;
+           padding: 2rem 1rem;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 2rem;
+}
+
+        .nav__logo {
+           max-width: 150px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+.explore__card {
+  padding: 1rem;
+  background-color: #1f2125;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__card p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__card a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+    <nav>
+        <div class="nav__logo">
+          <a href="#"><img src="images/logo.png" width="250" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="contact.html">Contact Us</a></li>
+          <li class="link"><a href="#">Service</a></li>
+          <li class="link"><a href="v.html">Fitness Tracker</a></li>
+          <li class="link"><a href="bmi.html">BMI Calculater</a></li>
+        </ul>
+        <a href="Log in.html"><button class="btn">Log in</button></a>
+      </nav>
+      <div class="explore__card">
+        <span><i class="ri-boxing-fill"></i></span>
+
+    <main>
+
+        <form id="workout-form">
+            <!-- ... -->
+        </form>
+
+        <form id="activity-form">
+            <form id="activity-form">
+                <fieldset>
+                    <legend>Track your activity</legend>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required><br>
+                    <label for="duration">Duration (in minutes):</label>
+                    <input type="number" id="duration" name="duration" min="0" required><br>
+                    <label for="type">Type of activity:</label>
+                    <select id="type" name="type" required>
+                        <option value="">Select an option</option>
+                        <option value="walking">Walking</option>
+                        <option value="running">Running</option>
+                        <option value="cycling">Cycling</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="weightlifting">Weightlifting</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <label for="intensity">Intensity level:</label>
+                    <input type="range" id="intensity" name="intensity" min="1" max="5" value="3"><br>
+                    <label for="calories">Calories burned (in kcal):</label>
+                    <input type="number" id="calories" name="calories" min="0"><br>
+                    <label for="heart-rate">Average heart rate (in bpm):</label>
+                    <input type="number" id="heart-rate" name="heart-rate" min="0"><br>
+                    <button type="submit" id="submit-activity">Submit activity</button>
+                </fieldset>
+            </form>
+        </form>
+    </main>
+      </div>
+    <footer>
+        <p>&copy; 2023 Fitness Tracker</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

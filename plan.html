@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px;
+            background-color:#0a0000;
+        }
+        
+
+            header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5%;
+            opacity: 70%;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        form {
+            margin-top: 30px;
+            padding: 0 2rem;
+        }
+
+        label {
+            font-size: large;
+            color: #fff;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border-radius: 10%;
+        }
+
+
+        nav {
+           max-width: 1200px;
+           margin: auto;
+           padding: 2rem 1rem;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 2rem;
+}
+
+        .nav__logo {
+           max-width: 150px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #f9ac54;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d79447;
+}
+.explore__card {
+  padding: 1rem;
+  background-image: url(images/original-4df125aefe5ddce909a7120e5b14583a.jpg);
+  background-size: cover;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__card p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__card a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Workout Planner</h1>
+    </header>
+    <nav>
+        <div class="nav__logo">
+             <a href="#"><img src="images/logo.png" width="250" alt="logo" /></a>
+           </div>
+           <ul class="nav__links">
+             <li class="link"><a href="index.html">Home</a></li>
+             <li class="link"><a href="contact.html">Contact Us</a></li>
+             <li class="link"><a href="#">Service</a></li>
+             <li class="link"><a href="v.html">Fitness Tracker</a></li>
+             <li class="link"><a href="bmi.html">BMI Calculater</a></li>
+           </ul>
+           <a href="Log in.html"><button class="btn">Log in</button></a>
+   </nav>
+   <div class="explore__card">
+    <span><i class="ri-boxing-fill"></i></span>
+    
+    <main>
+        <h2>Create Your Workout Plan</h2>
+
+        <form>
+            <label for="exercise">Exercise:</label>
+            <input type="text" id="exercise" name="exercise" required>
+
+            <label for="sets">Sets:</label>
+            <input type="number" id="sets" name="sets" min="1" required>
+
+            <label for="reps">Reps:</label>
+            <input type="number" id="reps" name="reps" min="1" required>
+
+            <label for="rest">Rest (seconds):</label>
+            <input type="number" id="rest" name="rest" min="0" required>
+
+            <button type="submit" class="btn">Add Exercise</button>
+        </form>
+
+        <h2>Your Workout Plan</h2>
+        <ul id="workoutList"></ul>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const workoutList = document.getElementById('workoutList');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const exercise = document.getElementById('exercise').value;
+                const sets = document.getElementById('sets').value;
+                const reps = document.getElementById('reps').value;
+                const rest = document.getElementById('rest').value;
+
+                const listItem = document.createElement('li');
+                listItem.textContent = `${exercise} - ${sets} sets of ${reps} reps, rest: ${rest} seconds`;
+                workoutList.appendChild(listItem);
+
+                // Clear form fields
+                form.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>

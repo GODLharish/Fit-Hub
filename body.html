@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodybuilding Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0000;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #f9ac54;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d79447;
+}
+        nav {
+           max-width: 1200px;
+           margin: auto;
+           padding: 2rem 1rem;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 2rem;
+}
+
+        .nav__logo {
+           max-width: 150px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+
+        main {
+            padding: 2em;
+            color: #ffffff;
+        }
+        .para{
+            color: #35373b;
+        }
+        .explore__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+ 
+}
+
+        .explore__card {
+  padding: 1rem;
+  background-color: #1f2125;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+  margin-bottom: 5rem;
+}
+/* .explore__card:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+} */
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__card p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__card a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.io{
+  padding-left: 22rem;
+}
+.iom{
+  padding-left: 18.5rem;
+}
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .explore__io {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+}
+.explore__io2 {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+}
+.explore__io span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__io h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__io p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__io a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+.sc{
+  margin-left: 1.7rem;
+}
+.h2{
+  color:#f9ac54 ;
+}
+.text{
+    text-align: center;
+    color: #f9ac54;
+    text-shadow: 4px 4px 4px black;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bodybuilding Program</h1>
+    </header>
+
+    <nav>
+         <div class="nav__logo">
+              <a href="#"><img src="images/logo.png" width="250" alt="logo" /></a>
+            </div>
+            <ul class="nav__links">
+              <li class="link"><a href="index.html">Home</a></li>
+              <li class="link"><a href="contact.html">Contact Us</a></li>
+              <li class="link"><a href="#">Service</a></li>
+              <li class="link"><a href="v.html">Fitness Tracker</a></li>
+              <li class="link"><a href="bmi.html">BMI Calculater</a></li>
+            </ul>
+            <a href="Log in.html"><button class="btn">Log in</button></a>
+    </nav>
+
+    
+                 <div class="explore__card">
+                    <span><i class="ri-boxing-fill"></i></span>
+                    
+                    <main>
+                      <div class="text">
+                        <h1>THE ULTIMATE GUIDE TO BODYBUILDING FOR BEGINNERS</h1>
+                      </div>
+                        <p class="para">Bodybuilding is the process of developing and shaping muscle fibres through the combination of weight workout, specific caloric intake, and rest. Bodybuilding, simply put, is the art of sculpting a muscular, symmetrical, and visually appealing physique.
+                        <br>
+                            If your goal is bodybuilding, the online workout planner is for you.
+                            <br>
+                            On our site, which includes hundreds of exercises and images, exercises are presented to you in categories according to muscle groups. Which muscle group you want to work, all you have to do is enter that category, select the exercises and click the add button. When you click the Add button, you can easily create a training program by specifying the number of sets and repetitions of the exercises. Easily add or remove exercises to create a workout designed specifically by and for you.
+                            
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="iom">
+                            <img src="images/bodybuilding-plan.png">
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="h2" style="color:#f9ac54";>HOW TO DESIGN A BODYBUILDING PROGRAM</h2>
+                           
+                            <p class="para">You need a successful bodybuilding workout plan to focus on getting your body in the
+                                 best shape possible. If you think creating your own workout plan is too hard we're 
+                                 here to tell you it's not. We'll help you create a custom workout plan step-by-step! 
+                                 You will be able to create your own workout plan by learning the most important 
+                                 information you need to know when creating a workout plan in our beginner's guide.</p>
+                                 <br>
+
+                                 <h2 class="h2" style="color:#f9ac54";>WHAT IS YOUR BODY TYPE?</h2>
+                                 
+                                 <p>Before going to start your training and nutrition regimen, it's important for you to
+                                   understand what is your body type? The three basic human body types are the endomorph,
+                                  the mesomorph, and the ectomorph. Knowing your body type will be going to help you in 
+                                  the long run. You can acquire the correct workout plan and diet planfor your body type, 
+                                  and by doing so you'll be going to set your realistic and attainable goals.</p>
+                                  <br>
+                                  <p>Is it an ectomorph, mesomorph or endomorph?</p>
+                                  <div class="io">
+                                  <img src="images/body-types.jpg">
+                                  </div>
+                                  <p>According to your ectomorph, endomorph or mesomorph body type, your training program
+                                     should be arranged according to the diet program you have planned. In other words, 
+                                     create a calorie surplus in a weight-gain training program, or create a calorie 
+                                     deficit in a weight-loss training program and lose weight.</p>
+                                    <!----------------------------------------------------------->
+                                    <!------------------------------------------------------------>
+                                    <br>
+                                     <h2 class="h2" style="color:#f9ac54";>BODYBUILDING - STRATEGY</h2>
+                                     <p>In order to achieve muscle growth (hypertrophy), bodybuilders focus in three main lines of action:</p>
+                                     <p><b>1.</b> Weight training</p>
+                                     <p><b>2.</b> nutrition</p>
+                                     <p><b>3.</b> Adequate rest</p>
+                                     <p>The type of weight training done by bodybuilders is meant to create microscopic tears in the muscle, 
+                                      forcing the body to repair the muscles and expand the storage capacity. The repairs cause the muscles 
+                                      to grow, a process known as hypertrophy. Combining a suitable workout with a high-protein diet and plenty 
+                                      of rest in off-times will ensure effective results.</p>
+                                      <br>
+                                      <h1>HOW MUCH WEIGHT SHOULD I LIFT TO GAIN MUSCLE?</h1>
+                                      <p>For hypertrophy, 3 to 6 sets of 6 to 12 repetitions per exercise with a moderate load (60% to 85% of
+                                         one-rep max) is ideal. More advanced individuals looking to further develop muscle mass can perform 
+                                         3 to 6 sets of 8 to 12 repetitions at 70% to 85% of one-rep max.</p>
+                                         <p>Beginners are advised to start with light weights and focus on proper technique. Building a strong 
+                                          foundation and gradually progressing in weight and intensity will help you safely and effectively 
+                                          achieve your muscle gain goals. </p>
+                                         <p>Your one rep max (1RM) is the maximum amount of weight that you can lift to complete one repetition.</p>
+                                         <h2 class="h2" style="color:#f9ac54";>HOW MANY SETS AND REPS SHOULD I DO?</h2>
+                                         <p>Different training organizations, such as the American Council on Exercise (ACE) or the National 
+                                          Academy of Sports Medicine (NASM), have slightly different models for each training goal. But they 
+                                          follow the same general guidelines.</p>
+                                          <div class="sc">
+                                        <img src="images/Screenshot 2023-11-18 184155.png">
+                                        </div>
+                                          <p>Three important variables of hypertrophy training are volume, intensity, and frequency. Volume 
+                                            refers to the number of muscles worked, exercises, sets, and reps during a single session. Intensity 
+                                            refers to the amount of work required to achieve the training and is proportional to the mass of the 
+                                            weights being lifted. Frequency refers to how many workout sessions are performed per week. On average, 
+                                            it takes two days for muscles to recover. A training frequency of two or three times per week has 
+                                            greater effect on muscle size than once per week, whereas training volume has more effect on muscle 
+                                            strength than training frequency.</p>
+                                            <br>
+                                            <h2 class="h2" style="color:#f9ac54";>RECOMMENDED VOLUME, INTENSITY, FREQUENCY, SET AND REP RANGE FOR HYPERTROPHY.</h2>
+                                            <p> Intensity: 60-85% of 1 rep max</p>
+                                            <p>Volume: 3-6 sets per exercise / 6-12 repetitions per set</p>
+                                            <p>Frequency: 2 to 3 days per week of training has been
+                                               effective in increasing musclehypertrophy. Higher frequencies 
+                                               may be used to fully maximize hypertrophy.</p>
+                                               <p>If you are doing weight training for the first time, the volume and intensity are kept low, the 
+                                                priority is to aim to do the exercises right.</p>
+                                                <br>
+                                                <h2 class="h2"  style="color:#f9ac54";>HOW MANY DAYS A WEEK SHOULD I WORKOUT?</h2>
+                                                  <p>To get the expected results, it is important to train smart, but also to give your body a 
+                                                  chance to recover properly. Proper recovery includes, among other things, a suitable diet and enough 
+                                                  recovery time to give the body time to adapt to the muscular work to which it is subjected, as well 
+                                                  as to improve your condition after each session.</p>
+                                                  <br>
+                                                  <h3>FOR MUSCLE GAIN</h3>
+                                                  <p>Research findings support the notion that working muscle groups twice a week leads to more substantial
+                                                     gains in both muscle size and strength compared to training them only once a week. As a result, 
+                                                     incorporating a minimum of two weekly sessions for the same muscle group could be a strategic approach 
+                                                     to maximize your training outcomes. </p>
+                                                     <p>For the same muscle group, 48 hours of recovery between sessions is usually sufficient. Remember that 
+                                                      muscles are damaged during training and develop during rest. You can train 7 days a week, but you can't 
+                                                      work the same muscle group. For example; If you work the chest on Monday, the legs on Tuesday, and the 
+                                                      shoulders on Wednesday, you will have enough rest time for the next chest workout.</p>
+                                                      <br>
+                                                      <div class="text">
+                                                      <h1>BODYBUILDING: EXERCISE SELECTION</h1>
+                                                      </div>
+                                                      <br>
+                                                        <h2 class="h2"  style="color:#f9ac54";>1. COMPOUND EXERCISES</h2>
+                                                        <p>Compound exercises involve multiple joint movements and engage several muscle groups simultaneously.
+                                                           These exercises are known for their efficiency in building overall strength and muscle mass. 
+                                                           Compound exercises are highly recommended for beginners because they provide a strong foundation by 
+                                                           developing functional strength and enhancing overall muscle coordination. They also burn more 
+                                                           calories due to the involvement of multiple muscle groups.</p>
+
+                                                          <p>Examples:</p>
+                                                          <p><b>1.</b> Squats: Work the quadriceps, hamstrings, glutes, lower back, and core.</p>
+                                                          <p><b>2.</b> Bench Press: Targets the chest, shoulders, and triceps.</p>
+                                                          <p><b>3.</b> Dead liftt: Engages the legs, lower back, upper back, and grip.</p>
+                                                          <br>
+                                                          <h2 class="h2" style="color:#f9ac54";>2. ISOLATION EXERCISES</h2>
+                                                          <p>Isolation exercises focus on a single muscle group, typically by moving only one joint. 
+                                                            They are used to target specific muscles and enhance their size, shape, and definition. </p>
+                                                          <p>Examples:</p>
+                                                          <P><b> Curl:</b> Isolates the biceps.</P>
+                                                            <P><b>1.</b> Pushdown: Targets the triceps.</P>
+                                                            <P><b>2.</b> Fly: Focuses on the chest.</P>
+                                                            <P><b>3.</b> Curl: Isolates the hamstrings.</P>
+                                                            <P><b>4.</b> Extension: Targets the quadriceps.</P>
+                                                            <p>For example, if you are designing a workout routine consisting of 3 exercises, you can do 
+                                                              2 exercises as compound and 1 exercise as isolation.</p>
+                                                              <p>Bench Press 3×10</p>
+                                                                <p>Incline Bench Press 3×10</p>
+                                                               <p> Dumbbell Fly 3×12</p>
+                                                               <section class="section__container explore__container">
+                                                                <div class="explore__header">
+                                                                  <h2 class="h2" style=color:#f9ac54;>SAMPLE BODYBUILDING PROGRAM FOR BEGINNERS</h2>
+                                                                  <div class="explore__nav">
+                                                                    <span><i class="ri-arrow-left-line"></i></span>
+                                                                    <span><i class="ri-arrow-right-line"></i></span>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="explore__grid">
+                                                                  <div class="explore__io2">
+                                                                    <span><i class="ri-boxing-fill"></i></span>
+                                                                    <h4>Chest + Arm
+                                                                    </h4>
+                                                                    <p>Bench Press 3 x 8</p>
+                                                                    <p>Incline Dumbbell Press 3 x 8-10
+                                                                    </p>
+                                                                    <p>Pec deck fly 3 x 12
+                                                                    </p>
+                                                                    <p>Dumbbell Curl 4 x 10
+                                                                    </p>
+                                                                    <p>Hammer Curl 4 x 10
+                                                                    </p>
+                                                                    <P>Pushdown 4 x 10</P>
+                                                                      <p>Wrist Roller 2-3 x 10</P>
+                                                                  </div>
+                                                                  <div class="explore__io2">
+                                                                    <span><i class="ri-heart-pulse-fill"></i></span>
+                                                                    <h4>Shoulders + Traps + Abs </h4>
+                                                                    <p>Dumbbell Lateral Raise 3 x 10</p>
+                                                                      <p>Shoulder Press 3 x 8
+                                                                      <p>Front Raise 3 x 8
+                                                                      <p>Rear delt machine fly 3 x 10
+                                                                      <p>Shrug 3 x 10
+                                                                      <p>Leg raise 3 x 10-15
+                                                                      <p>Bicycle Crunch 3 x 10-15</p>
+                                                                  </div>
+                                                                  <div class="explore__io2">
+                                                                    <span><i class="ri-heart-pulse-fill"></i></span>
+                                                                    <h4>Legs + Calves </h4>
+                                                                    <p>Squat 3 x 6 – 8</p>
+                                                                      <p>Leg extension 3 x 10</p>
+                                                                      <p>Leg Curl 3 x 10</p>
+                                                                      <p>Glute Bridge 3 x 10</p>
+                                                                      <p>Calf Raise 4 x 10
+                                                                      <p>Leg raise 3 x 10-15
+                                                                      </div>
+                                                                      <div class="explore__io2">
+                                                                        <span><i class="ri-heart-pulse-fill"></i></span>
+                                                                        <h4>Back + Abs </h4>
+                                                                        <p></p>
+                                                                          <p>Lat pulldown 3 x 10
+                                                                          </p>
+                                                                          <p>Bent over 3 x 6 – 8
+                                                                          </p>
+                                                                          <p>Seated cable row 3 x 8
+                                                                          </p>
+                                                                          <p>Hyperextension 3 x 10
+                                                                          </p>
+                                                                          <p>Decline Sit-up 3 x 12-15
+                                                                          </p>
+                                                                          <p>Bicycle Crunch 3 x 12-15
+                                                                          </p>
+                                                                          </div>
+    
+                                                                </div>
+                                                              </section>
+                                                  
+                                                  
+
+                  </div>
+                  </div>
+                  </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Bodybuilding Program. All rights reserved.
+    </footer>
+</body>
+</html>

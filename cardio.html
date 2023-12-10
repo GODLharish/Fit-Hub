@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodybuilding Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0000;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #f9ac54;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d79447;
+}
+        nav {
+           max-width: 1200px;
+           margin: auto;
+           padding: 2rem 1rem;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 2rem;
+}
+
+        .nav__logo {
+           max-width: 150px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+
+        main {
+            padding: 2em;
+            color: #ffffff;
+        }
+        .para{
+            color: #35373b;
+        }
+        .explore__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+        .explore__card {
+  padding: 1rem;
+  background-color: #1f2125;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__card p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__card a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.io{
+  padding-left: 22rem;
+}
+.iom{
+  padding-left: 18.5rem;
+}
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .explore__io {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+}
+.explore__io2 {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+.explore__io span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__io h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__io p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__io a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+.hiit{
+    align-items: center;
+    margin-left: 22rem;
+
+}
+.image2{
+    margin-left: 1.7rem;
+}
+.image3{
+    margin-left: 6.5rem;
+}
+.text{
+    text-align: center;
+    color: #f9ac54;
+    text-shadow: 4px 4px 4px black;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cardio</h1>
+    </header>
+
+    <nav>
+         <div class="nav__logo">
+              <a href="#"><img src="images/logo.png" width="250" alt="logo" /></a>
+            </div>
+            <ul class="nav__links">
+              <li class="link"><a href="index.html">Home</a></li>
+              <li class="link"><a href="contact.html">Contact Us</a></li>
+              <li class="link"><a href="#">Service</a></li>
+              <li class="link"><a href="v.html">Fitness Tracker</a></li>
+              <li class="link"><a href="bmi.html">BMI Calculater</a></li>
+            </ul>
+            <a href="Log in.html"><button class="btn">Log in</button></a>
+    </nav>
+
+    
+                 <div class="explore__card">
+                    <span><i class="ri-boxing-fill"></i></span>
+                    
+                    <main>
+                      <div class="text">
+                        <h1>WHAT IS CARDIO</h1>
+                      </div>
+                        <p class="para">Cardio is shorthand for cardiovascular exercises. We can express cardio training as exercises that accelerate breathing, increase heart rhythm, and intensely work and strengthen the heart and lungs. Cardio is also considered aerobic exercise, meaning it demands elevated oxygen flow, which causes you to breathe harder. eg; Cycling, jogging, jumping rope, rowing etc. activities such as</p>
+
+                           <p> An effective cardio workout can take anywhere from 10 minutes to an hour or more depending on your goals and what kind of cardio you’re doing. If you want to design a cardio workout, our site has hundreds of exercises with or without equipment.
+                            
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="iom">
+                            <img src="images/image1.png">
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 style="color:#f9ac54";>BENEFITS OF CARDIO</h2>
+                           
+                            <p class="para">Cardio is a great exercise for those looking to slim down because it helps you burn body fat and lose calories. Performing cardio continually brings many benefits to our health. Aerobic exercises improve physical condition by increasing energy level and resistance capacity.
+<br>
+<br>
+                                1. Improves lung capacity<br>
+                                2. Accelerates weight loss<br>
+                                3. Strengthens your heart<br>
+                                4. Aids sleep<br>
+                                5. Strengthens immune system<br>
+                                6. Increases your stamina, fitness and strength<br>
+                                <br>
+                                <br>
+                                Pairing a cardio workout with weight training could help you build muscle mass while you burn body fat. If your fitness goal is three to four days a week, you can split your workout into two, doing 30 minutes of cardio and 30 minutes of weight training.</p>
+                                 <br>
+
+                                 <h2 style="color:#f9ac54";>BEST CARDIO TYPES</h2>
+                                 
+                                 <p>There are several types of cardiovascular training that can help you reach your fitness goals. Here are the 5 most common types of cardiovascular training.</p>
+                                  <br>
+                                  <br>
+                                  <h2 style="color:#f9ac54";>1- LISS CARDIO (LOW INTENSITY, LONG DURATION)</h2>
+                                  <p>Low-intensity steady-state (LISS) exercise refers to aerobic movement done at a low pace. LISS cardio is suitable for beginners as it is easier to do. Think brisk walking, light jogging, easy cycling, or hiking.<br>
+                                    <br>
+                                    LISS cardio is typically performed for 30-60 minutes at a steady pace with limited changes in intensity. When doing LISS cardio, the goal is to keep your heart rate around 40 to 60 percent of your maximum heart rate.<br>
+                                    <br>
+                                    If you’re a beginner, aim to do three LISS sessions per week.
+                                    If you’re at an intermediate or advanced level, try to include one or two sessions of LISS and one or two sessions of HIIT cardio per week.</p><br>
+                                    <h3 style="font-style: italic; text-align: center;">Any movement is better than no movement.</h3><br>
+                                    <h4>LISS CARDIO EXERCISE SELECTION</h4>
+                                    <p>Any kind of physical activity that makes your heart rate go up is considered cardio. So, if an exercise gets your heart rate up for a while, it’s cardio exercise. If you can’t do any of these heart rate-boosting exercise, don’t worry. A few simple cardio exercises that can be done at home without any equipment are:<br>
+                                        <br>
+                                        1. Elbow to Knee Twist<br>
+                                        2. Dead Bug<br>
+                                        3. Montain Climber<br>
+                                        4. Run in Place<br>
+                                        5. Arm Circle<br>
+                                        6. Jumping Jack<br>
+                                        7. Bodyweight Sumo Squat<br>
+                                        8. Bcycle Crunch<br>
+                                        <br>
+                                        Cardio training are essential for a healthy cardiovascular system. They are beneficial to the lungs, bones, muscles and even all organs as well as the heart. If you’re planning to do your cardio workout at home, don’t forget to start slowly to warm your body up.
+                                    </p>
+                                    <h2 style="color:#f9ac54";>2- MODERATE-INTENSITY CARDIO (MEDIUM INTENSITY, MEDIUM DURATION)</h2>
+                                    <p>This involves aerobic activity done at around 50% to 70% of max HR. A moderate level of training noticeably increases your breathing rate and heart rate. You may sweat, but you are still able to carry on a conversation. You can talk, but you can’t sing. This type of training can be used for fat loss and for increasing aerobic capacity. This is also the next step up from the low intensity cardio.</p>
+                                    <br>
+                                    <br>
+                                    <h4>MODERATE INTENSITY CARDIO EXERCISES</h4>
+                                    
+                                    <div class="explore__grid">
+                                        <div class="explore__io2">
+                                          <span><i class="ri-boxing-fill"></i></span>
+                                          <h5>EXERCISE-1
+                                          </h5>
+                                          <h4>RIDING OUTDOOR BICYCLE</h4>
+                                          <p>MUSCLE GROUPS: Quads, Calves<br>
+                                            <br>
+                                            EQUIPMENT: Full GYM<br>
+                                            <br>
+                                            DIFFICULTY: Moderate
+                                          </p>
+                                          
+                                          
+                                          
+                                        </div>
+                                        <div class="explore__io2">
+                                            <span><i class="ri-boxing-fill"></i></span>
+                                            <h5>EXERCISE-2
+                                            </h5>
+                                            <h4>ROWING MACHINE</h4>
+                                            <p>MUSCLE GROUPS: Back / Wing
+                                                Cardio
+                                                Full Body<br>
+                                              <br>
+                                              EQUIPMENT: Full GYM, Machine<br>
+                                              <br>
+                                              DIFFICULTY: Moderate
+                                            </p>
+                                        </div>
+                                        <div class="explore__io2">
+                                            <span><i class="ri-boxing-fill"></i></span>
+                                            <h5>EXERCISE-3
+                                            </h5>
+                                            <h4>BRISKLY WALKING</h4>
+                                            <p>MUSCLE GROUPS: Calves, Hamstrings, Obliques<br>
+                                              <br>
+                                              EQUIPMENT:Full GYM, No Equipments<br>
+                                              <br>
+                                              DIFFICULTY: Moderate
+                                            </p>
+                                        </div>
+                                        <div class="explore__io2">
+                                            <span><i class="ri-boxing-fill"></i></span>
+                                            <h5>EXERCISE-4
+                                            </h5>
+                                            <h4>RUNNING</h4>
+                                            <p>MUSCLE GROUP: Obliques, Calves, Hamstrings, Quads<br>
+                                              <br>
+                                              EQUIPMENT: Full GYM, No Equipments<br>
+                                              <br>
+                                              DIFFICULTY: Moderate
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <h2 style="color:#f9ac54";>3- HIIT CARDIO (HIGH INTENSITY, SHORT DURATION)</h2>
+                                    <p>High-intensity interval training (HIIT), is a form of cardio workout performed with short, intense bursts aimed at maximizing performance under conditions where the muscles are deprived of oxygen. While its health benefits are important, HIIT also improves performance in both anaerobic and aerobic activities. A classic and simple example of HIIT is 30 seconds of sprinting, 30 seconds of walking (rest) or 20 seconds of skipping 10 seconds of rest.<br>
+<br>
+                                        With HIIT, your heart rate is generally at 80 to 95 percent of your maximum heart rate for the high-intensity intervals and 40 to 50 percent for the low-intensity intervals.<br>
+                                        <br>
+                                        HIIT cardio is done at a high intensity that helps increase fitness, but adding weight provides extra fat-burning and metabolism-boosting benefits. Pulse-increasing exercises, the concept of metabolic training, are compound exercises that aim to increase metabolic rate with less rest time between exercises to maximize calorie burning during and after training.</p><br>
+                                        <br>
+                                  <div class="hiit"><img src="images/hiit.png"><br>
+                                    <br>
+                                  </div>
+                                  <p>Short of time? Try a hiit workout and enjoy a great workout with similar benefits as a standard aerobic workout in less time. In interval training, you alternate between short periods of intense activity and longer periods of less intense activity.</p>
+                                <br>
+                                <br>
+                                  <h3>HIIT CARDIO EXERCISE SELECTION</h3>
+                                  <br>
+                                  <br>
+                                  <div class="image2"><img src="images/image2.png" alt=""></div>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <h2 style="color:#f9ac54";>4- AEROBIC INTERVAL TRAINING</h2>
+                                  <p>
+                                    The first way of doing aerobic interval training involves doing a period of moderate to high intensity aerobic activity, alternating with a period of rest of low intensity work.<br>
+<br>
+For example. 3 minutes of fast running or 30 second sprint then 1 minute of briskly walking or slow walking, repeated 3-4 times. You can vary the intervals and intensities to your fitness level, e.g. 5 minutes of moderate activity, 2 minutes easy, 1 minute hard, or perhaps 5 minutes hard, 5 minutes easy.<br>
+<br>
+Interval training is good for developing both the aerobic (with oxygen) and anaerobic (without oxygen) energy systems and is very effective at improving your VO2 Max and anaerobic threshold. What this means is that you can work harder (run or swim faster) and then maintain that intensity for longer (run harder at your higher pace).<br>
+<br>
+Interval training is highly effective for improving performance in endurance sports. It can be used to increase performance and recovery rate, especially in sports that require repetitive bursts of high-intensity exercise such as football, running, basketball, cycling or swimming.<br>
+
+
+                                  </p>
+                                  <br>
+                                  <br>
+                                  <h2 style="color:#f9ac54";>5- ANAEROBIC INTERVAL TRAINING</h2>
+                                   <p>Anaerobic means “without oxygen” and aerobic means “with oxygen”. Anaerobic training involves short, fast, high-intensity exercises that don’t make your body use oxygen like it does for cardio activities. It is done at intensities of 85 to 100% of your HR max. This type of activity involves going hard for short periods of time then resting for equal or longer periods of time.<br>
+<br>
+                                    Sprint 20 seconds<br>
+                                    Walk 20 seconds<br>
+                                    Sprint 30 seconds<br>
+                                    Walk 30 seconds<br>
+                                    Repeat 3 to 5 times depending on fitness level.<br>
+                                    <br>
+                                    Examples of anaerobic training include:
+                                    <br>
+                                    <br>
+                                    1. High-intensity interval training (HIIT)<br>
+                                    2. Weight lifting and strength training<br>
+                                    3. Tabata, crossfit and plyometrics</p>
+                                    <!----------------------------------------------------------->
+                                    <!------------------------------------------------------------>
+                                    <br>
+                                     <h2 style="color:#f9ac54";>HOW OFTEN SHOULD I DO CARDIO WORKOUT?</h2>
+                                     <p>Physical Activity Guidelines for Americans recommend that adults perform at least 150–300 minutes of moderate-intensity or 75–150 minutes of vigorous-intensity aerobic physical activity, or some combination of the two, each week. Aerobic training 3 to 5 days per week will improve your cardiovascular fitness. Training just 2 days a week will help you maintain the aerobic fitness you already have. Beginners should not do high-intensity interval training more than once or twice a week. You should only do this after you’ve established a good base of cardiovascular fitness.<br>
+<br>
+                                        Cardio exercise doesn’t have to take place in a gym. Many activities in our daily lives can provide cardio exercise, like taking the stairs, raking leaves or shoveling snow. Aim for at least 2-3 cardio workouts per week—a 10-15-minute high-intensity workout or an hourlong low-intensity activity.<br>
+                                        <br>
+                                        * &nbsp &nbsp The American College of Sports Medicine states that moderate-intensity physical activity between 150-250 minutes per week is effective in preventing weight gain, but will provide only modest weight loss. Physical activity greater than 250 minutes per week is recommended for weight loss and the prevention of weight gain.</p>
+                                     <br>
+                                     <h2 style="color:#f9ac54";>HOW LONG SHOULD MY CARDIO WORKOUT BE?</h2>
+                                     <p>If you’re into resistance or weight training, doing cardio two to three days a week is ideal for your overall health. However, if you are not doing any activity, your daily cardio time for your health is as follows.<br>
+<br>
+                                        1. If you’re just starting out, 30-60 minutes of LISS cardio per day<br>
+                                        2. 30 minutes of moderate-intensity cardio activity at least five days per week (150 minutes per week)<br>
+                                        3. at least 25 minutes of vigorous aerobic activity three days per week (75 minutes per week)</p>
+                                        <br>
+                                     <h2 style="color:#f9ac54";>CREATING A CARDIO PLAN</h2>
+                                     <br>
+                                     <p>If you want to customize your own cardio routine, just follow a few simple principles. First of all, to achieve a full body workout, exercise each muscle group during your routine.<br>
+<br>
+                                        In order to create a high-intensity or low-intensity cardio program, select the “cardio” category from the exercises section.
+                                        If you’ve never had training experience before, it’s best to start by choosing low-intensity (walking, jogging, cycling, stair) exercises. Beginners should aim for three to four cardio workouts a week for 30 to 60 minutes each session.<br>
+                                        <br>
+                                        High-intensity training methods performed in a row with short rest intervals require much more effort on the body. (Air squat, jump rope, mountain climber, sprint, power skips, burpee). For example, Tabata training: It calls for 20 seconds of work followed by 10 seconds of recovery, repeated eight times in a row for a total of 4 minutes. If you want to design a cardio program that suits your level, choose your favorite exercises, start slow and work your way up gradually.</p>
+                                     <br>
+                                     <div class="image3"><img src="images/cardio-workout-plan.png" alt=""></div>
+<br>
+<br>
+                                     <p style="text-align: center;">All information provided on this website is for information purposes only. Please see a healthcare professional for medical advice.</p>
+                                     
+                                                              </section>
+                                                  
+                                                  
+
+                  </div>
+                  </div>
+                  </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Bodybuilding Program. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodybuilding Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0000;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #f9ac54;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d79447;
+}
+        nav {
+           max-width: 1200px;
+           margin: auto;
+           padding: 2rem 1rem;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 2rem;
+}
+
+        .nav__logo {
+           max-width: 150px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+
+        main {
+            padding: 2em;
+            color: #ffffff;
+        }
+        .para{
+            color: #35373b;
+        }
+        .explore__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+        .explore__card {
+  padding: 1rem;
+  background-color: #1f2125;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+  margin-bottom: 4rem;
+}
+/* .explore__card:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+} */
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__card p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__card a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.io{
+  padding-left: 22rem;
+}
+.iom{
+  padding-left: 18.5rem;
+}
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .explore__io {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+}
+.explore__io2 {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+.explore__io span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__io h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__io p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__io a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+.hiit{
+    align-items: center;
+    margin-left: 22rem;
+
+}
+.image1{
+    margin-left: 1.7rem;
+    /* height: 2px; */
+    /* width: 15rem; */
+}
+.image3{
+    margin-left: 6.5rem;
+}
+img.animated-gif{
+  width: 150px;
+  height: auto;
+  margin-left: 1.7rem;
+}
+img.animated-gif1{
+  width: 150px;
+  height: auto;
+  margin-left: 5rem;
+}
+img.animated-gif2{
+  width: 150px;
+  height: auto;
+  margin-left: 3.3rem;
+}
+.image28{
+    margin-left: 13rem;
+}
+.text{
+    text-align: center;
+    color: #f9ac54;
+    text-shadow: 4px 4px 4px black;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PILATES</h1>
+    </header>
+
+    <nav>
+         <div class="nav__logo">
+              <a href="#"><img src="images/logo.png" width="250" alt="logo" /></a>
+            </div>
+            <ul class="nav__links">
+              <li class="link"><a href="index.html">Home</a></li>
+              <li class="link"><a href="contact.html">Contact Us</a></li>
+              <li class="link"><a href="#">Service</a></li>
+              <li class="link"><a href="v.html">Fitness Tracker</a></li>
+              <li class="link"><a href="bmi.html">BMI Calculater</a></li>
+            </ul>
+            <a href="Log in.html"><button class="btn">Log in</button></a>
+    </nav>
+
+    
+                 <div class="explore__card">
+                    <span><i class="ri-boxing-fill"></i></span>
+                    
+                    <main>
+                        <div class="text">
+                        <h1>WHAT IS PILATES</h1>
+                        </div>
+                        <p class="para">Pilates is a form of training that focuses on using both mind and body to achieve optimum performance. The deep stabilizing muscles of the body are conditioned and strengthened using sequences of movements that use gravity, body weight and specially designed equipment as forms of resistance.<br>
+<br>
+                            Pilates is a well established training method of rebuilding strength and function following injuries. Since it is low impact it is ideal as a form of physical therapy; teaches you to consciously maintain optimum anatomical alignment in all positions and during movement, thus making you stronger and less liable to pain.
+                            <br>
+                            <br>
+                            <br>
+                            <div class="iom">
+                            <img src="pilates/pngwing.com-23-600x400.png">
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 style="color:#f9ac54";>HOW TO DO PILATES</h2>
+                           
+                            <p class="para">Pilates exercises can be performed on a mat, where you create resistance using your own body weight and sometimes simple equipment like resistance bands. The first step in learning Pilates is learning some basic poses, and from there you can move on to more advanced positions and learn new movements. Some of the movements are performed on your back, while others are done on your stomach, your side, or in plank position, while others still are performed sitting or standing.<br>
+<br>
+                                In Pilates, your muscles are never worked to exhaustion, so there is no sweating or straining, just intense concentration. Pilates training consists of a variety of exercises that are performed in low repetitions, usually five to ten times, over a session of 20 to 30 minutes. Pilates will contribute to your strategy to lose weight by increasing muscle tone and strengthening your body, preparing it for the more dynamic calorie burning workouts.
+                                <br>
+                                <br>
+                                 <h2 style="color:#f9ac54";>HOW TO GET STARTED WITH PILATES</h2>
+                                 
+                                 <p>Pilates training caters for everyone, from beginner to advanced. Pilates consists of moving through a slow, sustained series of exercises using abdominal control and proper breathing. You can perform exercises using your own body weight, or with the help of various pieces of equipment. The quality of each posture is more important than the number of repetitions or how energetically you can move.</p>
+                                  <br>
+                                  <br>
+                                  <h3>TYPES OF PILATES</h3>
+                                  <p>The two basic forms of Pilates are:<br>
+<br>
+                                    1. Mat-based Pilates: It is a form of exercise that does not need complex types of equipment and all you need is a mat to practice the exercises. this is a series of exercises performed on the ground using gravity and your own body weight to provide resistance. The main aim is to condition the deeper, supporting muscles of your body to improve posture, balance and coordination.</p><br>
+                                    <div class="image1"><img src="pilates/image1.png" alt=""></div>
+                                    <p>Some helpful and inexpensive pieces of equipment to have for your mat Pilates routine include: Yoga mat, Dumbbells or hand weights, Gymstick, Resistance band, Chair, Pilates ball, Small towel or slider, Towel, Skipping rope and Ankle weights<br>
+<br>
+<br>
+                                    2. Equipment-based Pilates: this includes specific equipment that works against spring-loaded resistance, including the ‘reformer’, which is a moveable carriage that you push and pull along its tracks. Some forms of Pilates include weights (such as dumbbells) and other types of small equipment that offer resistance to the muscles.</p><br>
+                                    <br>
+                                    <h2 style="color:#f9ac54";>PILATES EXERCISES WITH A RESISTANCE BAND</h2>
+                                    <br>
+                                    <br>
+                                    <div class="gifs"><img class="animated-gif" src="pilates/gif1.gif">
+                                        <img class="animated-gif" src="pilates/gif2.gif">
+                                        <img class="animated-gif" src="pilates/gif3.gif">
+                                        <img class="animated-gif" src="pilates/gif4.gif">
+                                        <img class="animated-gif" src="pilates/gif5.gif">
+                                        <img class="animated-gif" src="pilates/gif6.gif">
+                                        <img class="animated-gif" src="pilates/gif7.gif">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="color:#f9ac54";>PILATES EXERCISES WITH A BALL</h2>
+                                    <br>
+                                    <br>
+                                    <div class="gifs"><img src="pilates/gif8.gif" class="animated-gif">
+                                        <img src="pilates/gif10.gif" class="animated-gif">
+                                        <img src="pilates/gif11.gif" class="animated-gif">
+                                        <img src="pilates/gif12.gif" class="animated-gif">
+                                        <img src="pilates/gif13.gif" class="animated-gif">
+                                        <img src="pilates/gif14.gif" class="animated-gif">
+                                        <img src="pilates/gif15.gif" class="animated-gif">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="color:#f9ac54";>PILATES EXERCISES WITH GYMSTICK</h2>
+                                    <br>
+                                    <br>
+                                    <div class="gifs"><img src="pilates/gif16.gif" class="animated-gif">
+                                        <img src="pilates/gif17.gif" class="animated-gif">
+                                        <img src="pilates/gif18.gif" class="animated-gif">
+                                        <img src="pilates/gif19.gif" class="animated-gif">
+                                        <img src="pilates/gif20.gif" class="animated-gif">
+                                        <img src="pilates/gif21.gif" class="animated-gif">
+                                        <img src="pilates/gif22.gif" class="animated-gif">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="color:#f9ac54";>PILATES BENEFITS</h2>
+                                    <br>
+                                    <p>Pilates training works the body in a functional way, using muscles in synergy with each other. This is the way that the body is designed to be used, and the exercises sequences performed can prepare you for the physical challenges of everyday life.<br>
+                                        <br>
+                                        1. Improves core strength: The muscles that move, support and stabilize your spine are called core or trunk muscles. Major muscles included are the transversus abdominis, internal and external obliques, rectus abdominis, multifidus, pelvic floor muscles, erector spinae, longissimus thoracis, and the diaphragm. Pilates exercises activates your core muscles. These muscles are essential for supporting your entire body.Virtually every movement you make with your arms, legs and back generates from this muscle group. Core strength is the basis for all coordinated and powerful athletic movements. Strengthening these muscles helps stabilize your body, support your spine, and improve your overall fitness. In addition, a strong core can reduce stress on the joints and promote better posture.
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <div class="gifs">
+                                            <img src="pilates/img23.png" class="animated-gif1">
+                                            <img src="pilates/img24.png" class="animated-gif1">
+                                            <img src="pilates/img25.png" class="animated-gif1">
+                                            <img src="pilates/img26.png" class="animated-gif1">
+                                            <img src="pilates/img27.png" class="animated-gif1">
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <p>2. Flexibility: A body that is flexible as well as strong is less prone to injury than a rigid body. Pilates incorporates both dynamic and active stretching. Dynamic stretching involves using movement to gently and safely stretch muscles to their full range of motion (but not beyond). For example, both the Single Straight Leg Stretch and the Single Leg Kick in Pilates incorporate a repeated controlled extension or flexion of the leg to its furthest stretch. Some Pilates instructors might incorporate static or passive stretching (which does not involve movement) into their classes as well.
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <div class="gifs"><img src="pilates/gif23.gif" class="animated-gif2">
+                                            <img src="pilates/gif24.gif" class="animated-gif2">
+                                            <img src="pilates/gif25.gif" class="animated-gif2">
+                                            <img src="pilates/gif26.gif" class="animated-gif2">
+                                            <img src="pilates/gif27.gif" class="animated-gif2">
+                                            <img src="pilates/gif28.gif" class="animated-gif2">
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <p>3. Balance: Feeling a little wobbly? Pilates can help. A stronger core will naturally lead to improved balance and several Pilates exercises are designed to specifically test your balance and control. Practicing Pilates rolling exercises like the Seal and Corkscrew, the Roll-Over and the Teaser will help train your core muscles to more quickly adjust to changes in your center of gravity.
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <div class="gifs"><img src="pilates/gif34.gif" class="animated-gif2">
+                                            <img src="pilates/gif29.gif" class="animated-gif2">
+                                            <img src="pilates/gif30.gif" class="animated-gif2">
+                                            <img src="pilates/gif31.gif" class="animated-gif2">
+                                            <img src="pilates/gif32.gif" class="animated-gif2">
+                                            <img src="pilates/gif33.png" class="animated-gif2">
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <p>4. Alignment and posture: People who work at desk jobs or spend a lot of time hunched over a computer screen are especially prone to developing poor posture habits. In a Pilates class, you’ll spend a lot of time focusing on lengthening your spinal column and dropping your shoulders. Along with relieving neck and shoulder tension, these exercises will minimize or eliminate habitual slouching by training your vertebrae to correctly align from head to tail bone. The stronger lower back muscles, abdominals and obliques you’ll develop from regular Pilates practice will also help you stand stronger and walk taller.
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <div class="gifs"><img src="pilates/gif35.gif" class="animated-gif2">
+                                            <img src="pilates/gif36.gif" class="animated-gif2">
+                                            <img src="pilates/gif37.gif" class="animated-gif2">
+                                            <img src="pilates/gif38.gif" class="animated-gif2">
+                                            <img src="pilates/gif39.gif" class="animated-gif2">
+                                            <img src="pilates/gif40.gif" class="animated-gif2">
+                                            <br>
+                                            <br>
+                                            <p>5. Mindfulness and concentration: Pilates is (literally) about mind over matter. By using your mind to control your muscles, you learn to channel mental energy in a productive, healthy way. Often, a focused mind and the correct mental imagery are the keys to accomplishing a difficult exercise. Most Pilates classes begin with breathing exercises designed to get you to focus on your inhalations and exhalations. This guided focus leads to healthier, more efficient breathing and can rejuvenate your awareness of the relationship between mind and body.</p>
+                                            <br>
+                                            <br>
+                                            <h2 style="color:#f9ac54";>DESING YOUR OWN PILATES WORKOUT ROUTINE</h2>
+                                            <br>
+                                            <p>If you want to design your own pilates workout, it is important to follow balanced workout guidelines and not focus on just one body area (hip, for example). When creating your ideal pilates training schedule, devise one that works with your lifestyle and helps you meet your specific fitness goals. While three or four workouts per week may be ideal, two or even once-weekly sessions can still offer health benefits.</p>
+                                            <br>
+                                            <br>
+                                            <h2 style="color:#f9ac54";>PILATES WORKOUT PLAN</h2>
+                                            <br>
+                                            <br>
+                                            <p>These exercises are suitable for both beginners and those who exercise regularly. A beginner to Pilates should try to practice Pilates workout at least twice a week, although many people find three times a week to be more effective.
+                                                Perform a 5-10 minute warm-up routine before starting your pilates workout. If you have never exercised before, try to do these movements slowly, with control, and with proper form.</p>
+                                                <br>
+                                                <br>
+                                                <img src="pilates/img28.png" class="image28">
+
+
+                                    
+                                                  
+                                                  
+
+                  </div>
+                  </div>
+                  </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Bodybuilding Program. All rights reserved.
+    </footer>
+</body>
+</html>

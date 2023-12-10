@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodybuilding Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0000;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #f9ac54;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d79447;
+}
+        nav {
+           max-width: 1200px;
+           margin: auto;
+           padding: 2rem 1rem;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 2rem;
+}
+
+        .nav__logo {
+           max-width: 150px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f9ac54;
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 50%;
+}
+
+        main {
+            padding: 2em;
+            color: #ffffff;
+        }
+        .para{
+            color: #35373b;
+        }
+        .explore__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+ 
+}
+
+        .explore__card {
+  padding: 1rem;
+  background-color: #1f2125;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__card p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__card a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.io{
+  padding-left: 22rem;
+}
+.iom{
+  padding-left: 15rem;
+}
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .explore__io {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+  margin-left: 3.5rem;
+}
+.explore__io2 {
+  padding: 1rem;
+  background-color: #353735;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 90%;
+}
+.explore__io span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color:#ffffff;
+  background-color: #d79447;
+  border-radius: 5px;
+}
+.explore__io h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore__io p {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explore__io a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+.sc{
+  margin-left: 1.7rem;
+}
+.h2{
+  color:#f9ac54 ;
+}
+.iom2{
+    padding-left: 22rem;
+}
+.tv{
+    text-shadow: 6px 6px 6px black;
+}
+.text{
+    text-align: center;
+    color: #f9ac54;
+    text-shadow: 4px 4px 4px black;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CROSSFIT</h1>
+    </header>
+
+    <nav>
+         <div class="nav__logo">
+              <a href="#"><img src="images/logo.png" width="250" alt="logo" /></a>
+            </div>
+            <ul class="nav__links">
+              <li class="link"><a href="index.html">Home</a></li>
+              <li class="link"><a href="contact.html">Contact Us</a></li>
+              <li class="link"><a href="#">Service</a></li>
+              <li class="link"><a href="v.html">Fitness Tracker</a></li>
+              <li class="link"><a href="bmi.html">BMI Calculater</a></li>
+            </ul>
+            <a href="Log in.html"><button class="btn">Log in</button></a>
+    </nav>
+
+    
+                 <div class="explore__card">
+                    <span><i class="ri-boxing-fill"></i></span>
+                    
+                    <main>
+                      <div class="text">
+                        <h1>WHAT IS CROSSFIT WORKOUT AND HOW TO START</h1>
+                        </div>
+                        <p class="para">A form of high intensity interval training, CrossFit is a strength and conditioning workout that is made up
+                             of ”Constantly varied” functional movement performed at a high intensity level. All CrossFit workouts are based on 
+                             functional movements, and these include athletics, gymnastics, weightlifting, running, cycling, rowing, and
+                              plyometric explosive exercises that are also done on your own body weight. These exercises are the basic movements
+                               of life.</p>
+
+                              <h3 style="font-style: italic;"><b>Here is the definition of CrossFit:</b> Constantly Varied, High Intensity, Functional Movements</h3>
+                        <br>
+                          
+                            <div class="iom">
+                            <img src="images/cros.png">
+                            </div>
+                            <br>
+                            <br>
+                            <p>CrossFit is a general strength and conditioning program. It aims at the development of 10 defined basic physical characteristics.
+                                They are Cardiovascular and Respiratory endurance, Stamina, Strength, Flexibility, Power, Speed, Coordination, Agility, Balance,
+                                 and Accuracy.</p>
+                                 <h4>Development of targeted physical properties;</h4>
+                                 <p>Olympic weightlifting moves</p>
+                                    <p>Basic gymnastic moves</p>
+                                    <p>Athletics moves</p>
+                                    <p>HIIT cardio</p>
+                                    <p>These functional movements, unlike bodybuilding exercises, work the whole body and muscle groups in
+                                         a balanced way.</p>
+
+                                         <div class="explore__grid">
+                                            <div class="explore__io2">
+                                              <span><i class="ri-boxing-fill"></i></span>
+                                              <h5>EXERCISE 1</h5>
+                                              <h3>TURKISH GET-UP</h3>
+                                              <p>Equipment: Dumbbells, Kettlebell</p>
+
+                                            </div>
+                                            <div class="explore__io2">
+                                              <span><i class="ri-heart-pulse-fill"></i></span>
+                                              <h5>EXERCISE 2</h5>
+                                              <h3>KETTLEBELL SWINGS</h3>
+                                              <p>Equipment: Full Gym, Kettlebell</p>
+                                            </div>
+                                            <div class="explore__io2">
+                                              <span><i class="ri-heart-pulse-fill"></i></span>
+                                              <h5>EXERCISE 3 </h5>
+                                              <h3>MUSCLE SNATCH
+                                              </h3>
+                                                <p>Equipment: Barbell, Full Gym</p>
+                                               
+                                                </div>
+                                                <div class="explore__io2">
+                                                  <span><i class="ri-heart-pulse-fill"></i></span>
+                                                  <h5>EXERCISE 4</h5>
+                                                  <h3>LEGLESS ROPE CLIMB</h3>
+                                                <p>Equipment: Full Gym
+                                                    </p>
+                                                    
+                                                    </div>
+
+                                          </div>
+                                       
+
+                            <h2 class="h2" style="color:#f9ac54";>BENEFITS OF CROSSFIT</h2>
+                           
+                            <div class="para">
+                                <p>1. Cardiovascular endurance</p>
+                                <p>2. Eyebrow Development</p>
+                                <p>3. Overall durability</p>
+                                <p>4. Power</p>
+                                <p>5. Agility, Balance and Flexibility</p>
+                                <p>6. Physical strength and Body Strength</p>
+                                <p>7. speed</p>
+                                <p>8. Coordination</p>
+                                <p>9. Motility</p>
+                                <p>10. Calorie burning</p>
+                                </div>
+                                 <br>
+
+                                 <h3 class="h3">CROSSFIT FOR BEGINNERS</h3>
+                                 
+                                 <p>While movements such as sitting, crouching and jumping seem easy, everything may not be as 
+                                    simple as it seems. CrossFit workouts reach the peak of the fitness level with the combination
+                                     of functional movements that push the limits of the athlete. Do not be fooled by the fact that 
+                                     some movements seem simple, crossfit is a training method that requires real fitness. When 
+                                     applying explosive movements, you should pay attention to controlled breathing. If you consume
+                                      your energy in an instant, you can spend bad time in the middle of training. If you want to start
+                                       a new beginning, you can choose and apply the “wod” (Workout of the Day) level that suits you..</p>
+                                       <div class="iom">
+                                        <img src="images/crossfit2-768x384.jpg">
+                                       </div>
+
+
+                                     <h2 class="h2" style="color:#f9ac54";>CROSSFIT TRAINING STYLES</h2>
+                                     <p>Crossfit is made by determining the training styles given below.After choosing your “Wod” program, 
+                                        which means “workout of the Day”, you can practice the exercises. Daily workouts in CrossFit lounges 
+                                        are determined by coaches, and each day’s training can be different. Due to the nature of some 
+                                        movements in CrossFit, it’s best to learn them with a coach so that you can perform them correctly 
+                                        and more confidently.</p>
+                                    
+                                      <h3 style="color: #f9ac54";>FOR TIME</h3>
+                                      <p>Race against time (For time); It aims to complete the given CrossFit training plan within the specified time.
+                                         It is considered successful when you finish your training plan as soon as possible while competing with yourself 
+                                         or someone else. Eg. Completing 20 push-ups and 10 pull-ups in 1 minute</p>
+                                         <br>
+                                         <p>Examples of FOR TIME workouts</p>
+                                        <div class="iom2">
+                                        <img src="images/wod-bert-crossfit-600x461.png">
+                                        </div>
+
+                                         <p style="color: red;"> Wod Bert (Beginner)</p>
+                                         <div class="sc">
+                                            <img src="images/Screenshot 2023-11-19 004740.png">
+                                         </div>
+                                         <h3 class="h3" style="color: #f9ac54";>AMRAP</h3>
+                                         <p>It is aimed to repeat the plan given in this training in the maximum number of times. Eg. A 5-minute plan,
+                                             10 pull-ups, 20 push-ups, and 30 sit-ups aim at the maximum number of laps in 5 minutes</p>
+                                             <br>
+                                             <p>Examples of AMRAP workouts</p>
+                                          <div class="iom2">
+                                        <img src="images/crossfit-wod-cindy-600x461.png">
+                                        </div>
+                                          <p>A great starting workout, Cindy targets the most workout repetitions you can do in 20 minutes.</p>
+                                            <br>
+                                            <p style="color: red;">Wod Cindy</p>
+                                            <p>5 Pull-ups</p>
+                                            <p>10 push-ups</p>
+                                            <p>15 Squats</p>
+                                            <br>
+                                                <h3 style="color: #f9ac54";>EMOM</h3>
+                                                  <p>In this training style, the target given at the beginning of every minute is made and the remaining time is 
+                                                    rest. If you complete the exercise in less than 1 minute, you can rest for the remaining time. If you finish 
+                                                    the exercise in 30 seconds, you will rest for 30 seconds. If you finish in 50 seconds, you deserve to rest 
+                                                    for 10 seconds.</p>
+                                                    <p>EMOM programs are also a great form of metabolic conditioning that trains your body to use oxygen efficiently
+                                                         and speed up metabolism.</p>
+                                                  <br>
+                                                  <p>Examples of EMOM workouts</p>
+                                                  <div class="iom2">
+                                                    <img src="images/emom-wod-600x461.png">
+                                                  </div>
+                                                  <p style="color: red;">10 Min. Emom Wod</p>
+                                                    <p>1. Min.15 V-Ups</p>
+                                                    <p>2. Min.7 Burpee Pull Ups</p>
+                                                    <p>3. Min.15 cal Assault Bike</p>
+                                                    <p>4. Min.14 Dumbbell Snatches 30 lbs</p>
+                                                      <br>
+                                                      <h3 style="color: #f9ac54";>CHIPPER</h3>
+                                                        <p>It is the completion of multiple exercise movements one after the other, without any 
+                                                            gaps in between. This set is applied only once.</p>
+                                                        <br>
+                                                            <p>Examples of Chipper workouts</p>
+                                                            <div class="iom2">
+                                                                <img src="images/chipper-wod-600x461.png">
+                                                            </div>
+
+                                                          <p style="color: red;">Wod</p>
+                                                          <p>50 Russian Twists</p>
+                                                            <p>a. 40 Jumping lunges</p>
+                                                            <p>b. 30 KB swings</p>
+                                                            <p>c. 20 Puhs ups</p>
+                                                            <p>d. 10 jump burpees</p>
+                                                          <br>
+                                                          <h3 style="color: #f9ac54";>TABATA </h3>
+                                                          <p>It is a working style with 10 seconds rest intervals after performing maximum movements 
+                                                            and performing movements within 20 seconds. Tabata is a form of high-intensity interval 
+                                                            training (HIIT) that has been proven to quickly burn excess calories.</p>
+                                                            <br>
+                                                          <p>Examples of TABATA workouts</p>
+                                                          <div class="iom2">
+                                                            <img src="images/tabata-wod-600x461.png">
+                                                            <p>Do as many repetitions as possible within 20 seconds. immediately after, rest for 10 seconds. 
+                                                                repeat the movement 8 times. Rest for a minute and move on to the next move.</p>
+                                                          </div>
+                                                            <p style="color: red;">4 minute Tabata (Beginner)</p>
+                                                              <p>1. High Knees</p>
+                                                                <p>2. Skaters</p>
+                                                                <p>3.Knee Tuck To Pushup</p>
+                                                                <p>4.Mountain Climbers</p>
+                                                                <p>5.Plank Knee to Elbow</p>
+                                                               
+                                                              <h2  style="color:#f9ac54";>CROSSFIT DICTIONARY</h2>
+                                                              <p>Timecap: It means completing the given Mission on time.</p>
+                                                                <p>1. WOD: Workout of the day</p>
+                                                                <p>2. Rep: Repetition</p>
+                                                                <p>3. 1RM: 1 rep maximum – One maximum repetition</p>
+                                                                <p>4. BW: Body Weight – Exercise with body weight</p>
+                                                                <p>5. PR: Personal Record</p>
+                                                                <p>6. AFAP: As Fast as Possible – Finish as fast as possible.</p>
+                                                                <p>7. SNATCH: Snatch is the movement of taking the Olympic weight off the ground and lifting it on your 
+                                                                    head. Your arms should be straight.</p>
+                                                                <p>8. BOX: The term used for Crossfit salons.</p>
+                                                                <p>9.ON 45 SEC: You have 45 seconds to complete a new set and rest between sets.</p>
+                                                                <p>10.TT (TIME TRIAL): It is the crossfit term used in races for time or distance.</p>
+                                                                <p>11. MetCon: Metabolic Conditioning workout
+                                                                 </p>
+                                                  
+                                                  
+
+                  </div>
+                  </div>
+                  </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Bodybuilding Program. All rights reserved.
+    </footer>
+</body>
+</html>
+
+  
